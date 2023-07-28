@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Seleciona texto + clica no alt e segura +  clica no botão para cima -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio-STAGE-3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+  
+  <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.UMtOyWNOdXLI0MPEH25YxgAAAA?pid=ImgDet&rs=1" />
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+  <div id="pagina">
+    <header>
+      <h1>Mentoria</h1>
+      <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+    </header>
+
+    <form id="f">
+      
+      <div class="wrapper">
+
+        <fieldset>
+
+          <div class="pacote-sessao">
+         
+            <legend>Informações pessoais</legend>
+
+            <div id="coluna-2">
+
+              <div class="pacote-campo">
+                <label for="campo-nome">Nome</label>
+                <input type="text" name="campo-nome" id="campo-nome"/>
+              </div>
+
+              <div class="pacote-campo">
+                <label for="campo-sobrenome">Sobrenome</label>
+                <input type="text" name="campo-sobrenome" id="campo-sobrenome"/>
+              </div>
+
+            </div>
+
+            <div class="pacote-campo">
+              <label for="campo-email">Email 
+                &nbsp;
+                <span>(digite um email válido)</span>
+              </label>
+              <input type="email" name="campo-email" id="campo-email" required/>
+            </div>
+
+            <div class="pacote-campo">
+              <label for="campo-senha">
+                Senha 
+                &nbsp;
+                <span> (digite no mínimo 6 caracteres)</span>
+              </label>
+              <input type="password" name="campo-senha" id="campo-senha" required minlength="6"/>
+            </div>
+
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+
+          <div class="pacote-sessao">
+          
+            <legend>Informações do mentor</legend>
+
+              <div class="pacote-campo">
+                <label for="campo-nome">
+                  Nome do seu mentor
+                  &nbsp; 
+                  <span>(só o primeiro nome)</span></label>
+                <input type="text" name="campo-nome" id="campo-nome"/>            
+              </div>
+          </div>
+        </fieldset>
+
+        
+        <fieldset>
+
+          <div class="pacote-sessao">
+          
+            <legend>Seus horários disponíveis</legend>
+
+              <strong>primeira mentoria</strong>
+
+                <div class="col--3">
+                  <div class="pacote-campo">
+                    <label for="campo-data">
+                      Data
+                      &nbsp;
+                      <span>(DD/MM/AAAA)</span>
+                    </label>
+                    <input type="date" name="campo-data" id="campo-data" required />            
+                  </div>
+
+                  <div class="pacote-campo">
+                    <label for="campo-hora-inicio">Das</label>
+                    <input type="time" name="campo-hora-inicio-" id="campo-hora-inicio-"/>
+                  </div>
+
+                  <div class="pacote-campo">
+                    <label for="campo-hora-final">Até</label>
+                    <input type="time" name="campo-hora-final" id="campo-hora-final"/>
+                  </div>
+
+                </div>
+
+              <strong>segunda mentoria</strong>
+
+                <div class="col--3">
+
+                  <div class="pacote-campo">
+                    <label for="campo-data">
+                      Data
+                      &nbsp;
+                      <span>(DD/MM/AAAA)</span></label>
+                    <input type="date" name="campo-data" id="campo-data" required/>            
+                  </div>
+
+                  <div class="pacote-campo">
+                    <label for="hora-inicio">Das</label>
+                    <input type="time" name="hora-inicio" id="hora-inicio"/>
+                  </div>
+
+                  <div class="pacote-campo">
+                    <label for="hora-final">Até</label>
+                    <input type="time" name="hora-final" id="hora-final"/>
+                  </div>
+
+                </div>
+          </div>
+        </fieldset>
+      
+      </div>
+    </form>
+
+    <footer>
+      <input  class="button" type="submit" value="Salvar" form="f"/>
+    </footer>
+
+    <a target="_blank" href="#">
+      <img src="code-config.gif"/>
+    </a>  
+
+  </div>
+</body>
+</html>

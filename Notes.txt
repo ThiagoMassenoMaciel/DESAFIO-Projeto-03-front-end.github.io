@@ -1,0 +1,51 @@
+  <!-- Seleciona texto + clica no alt e segura +  clica no botão para cima -->
+
+estrutura html 
+e aos poucos padronizando css
+as fontes 
+as cores 
+
++details se desejar 
+
+demorei umas 1h20' ' parte  1/4
+
+demorei umas 1h20'   pedaço 2/4
+
+demorei umas 2h30'   parte 1/4
+
+5h10'
+
+Situação as coisas dentro do pacote-campo era flex column mas 
+as divs dentro das sessões deveriam ser agrupadas por flex row -> uma ao lado da outra e não em baixo
+
+conferir nome de class/id no html com o seletor css 
+trocar prioridade de classe para id 
+
+        erro : 
+        queria colocar pacote-campo um do lado do outro 
+        n estava dando certo com a divisão dos campos por classe => Troquei por id 
+            coluna-2 deu certo 
+        mas a coluna-3 não mudou - continuou um pacote-campo embaixo do outro
+        pois no html seu nome class era col--3 e no css coloquei coluna--3
+
+        erro:
+        Havia colocado font itallic - sopercebi depois
+
+Dúvidas : porque o seletor de elementos html não funciona no css com esta especificidade ?
+
+
+        não da pra por gap na label so tem uma caixa nela 
+        como afastar-la do texto título menor ?   &nbsp;
+
+legend strong
+    so funciona se eu deixar o strong sozinho
+
+
+[fonts utilizadas](https://fonts.google.com/share?selection.family=Poppins%7CStaatliches)
+
+
+                      font-size                   line-height             font-family           Cor           TAG
+Título 1               24px                         34px                    Staatliches         #535971       legend
+Título 2               20px                         34px                    Staatliches         #535971       strong
+título menor           14px                         24px                    Poppins             #4E4958       label
+título minusculo       12px                         20px                    Poppins             #C1BCCC       span
